@@ -38,6 +38,27 @@ body {
 .header__right-item:not(:last-child) {
     margin: 0 33px 0 0;
 }
+.header__right-item:last-child {
+    position: relative;
+}
+
+.quantity {
+    position: absolute;
+    right: 0;
+    top: -3px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 14px;
+    z-index: 1;
+}
+
+.header__right-link::after {
+    content: url(../img/quantity.svg);
+    display: block;
+    position: absolute;
+    right: -6px;
+    top: -6px;
+}
 
 .intro {
     height: 768px;
