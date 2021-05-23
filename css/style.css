@@ -44,8 +44,8 @@ body {
 
 .quantity {
     position: absolute;
-    right: 0;
-    top: -3px;
+    right: -2px;
+    top: -6px;
     color: #fff;
     font-size: 12px;
     line-height: 14px;
@@ -56,8 +56,8 @@ body {
     content: url(../img/quantity.svg);
     display: block;
     position: absolute;
-    right: -6px;
-    top: -6px;
+    right: -9px;
+    top: -9px;
 }
 
 .intro {
