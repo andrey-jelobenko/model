@@ -199,3 +199,136 @@ body {
     margin: 18px auto 95px;
     text-align: center;
 }
+
+.services {
+    background-color: #222224;
+}
+
+.services__wrap {
+    padding: 104px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.services__item {
+    flex-basis: 360px;
+    text-align: center;
+}
+
+.services__item-h4 {
+    font-weight: normal;
+    font-size: 19.96px;
+    color: #FBFBFB;
+    margin: 25px 0 16px;
+}
+
+.services__item-text {
+    font-size: 14px;
+    color: #FBFBFB;
+    padding: 0 20px;
+}
+
+.footer__top {
+    background: url(../img/bg-footer__top.png) no-repeat center bottom;
+    background-size: cover;
+    padding: 97px 0 156px;
+}
+
+.footer__top-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer__top-left {
+    text-align: center;
+}
+
+.footer__top-left-text {
+    width: 350px;
+    font-size: 20px;
+    color: #222224;
+    margin-top: 30px;
+}
+
+.footer__top-right-form {
+    margin: 0 0 32px 0;
+}
+
+.subscribe {
+    text-align: center;
+    margin-right: 85px;
+}
+
+.subscribe__text-h {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 167.2%;
+    color: #222224;
+}
+
+.subscribe__text-p {
+    font-size: 18px;
+    line-height: 167.2%;
+    color: #222224;
+}
+
+.subscribe__button {
+    display: flex;
+}
+
+.subscribe__input {
+    width: 256px;
+    height: 49px;
+    background: #E1E1E1;
+    border: none;
+    border-top-left-radius: 24px;
+    border-bottom-left-radius: 24px;
+    padding: 0 0 0 22px;
+}
+
+.subscribe__input:focus {
+    outline: none;
+}
+
+.subscribe__input,
+.subscribe__input::-webkit-input-placeholder {
+    font-size: 14px;
+    color: #222224;
+    opacity: 0.67;
+}
+
+.subscribe__submit {
+    width: 100px;
+    height: 49px;
+    border: none;
+    background: #F16D7F;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+}
+
+.footer__bottom {
+    background: #222224;
+}
+
+.footer__bottom-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.footer__bottom-copyright {
+    line-height: 19px;
+    color: #FBFBFB;
+}
+
+.footer__bottom-social {
+    display: flex;
+}
+
+.footer__bottom-social-link:not(:last-child) {
+    margin-right: 8px;
+}
