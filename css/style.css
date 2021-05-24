@@ -308,15 +308,16 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 0 30px 0;
+    margin: 0 0 18px 0;
 }
 
 .products__items-product {
-    margin: 0 0 128px 0;
+    margin: 0 0 98px 0;
 }
 
 .products__items-link {
     text-decoration: none;
+    margin-bottom: 30px;
 }
 
 .products__items-card {
