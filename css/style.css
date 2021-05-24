@@ -110,9 +110,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+        width: 360px;
+    height: 260px;
+    text-decoration: none;
 }
 
-.assment__item h2 {
+.assment__item-h2 {
     text-align: center;
     font-size: 16px;
     line-height: 19px;
@@ -131,7 +134,7 @@ body {
     height: 180px;
 }
 
-.assment__item h2 span {
+.assment__item-h2 span {
     font-weight: bold;
     font-size: 24px;
     line-height: 29px;
@@ -181,6 +184,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.products__items-link {
+    text-decoration: none;
 }
 
 .products__items-card {
