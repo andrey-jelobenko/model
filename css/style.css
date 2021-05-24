@@ -186,12 +186,12 @@ body {
 
 .products__items-link {
     text-decoration: none;
+    margin: 0 0 30px 0;
 }
 
 .products__items-card {
     width: 360px;
     background: #F8F8F8;
-    margin: 0 0 30px 0;
 }
 
 .products__items-info {
