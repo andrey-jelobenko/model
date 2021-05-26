@@ -389,6 +389,11 @@ body {
     padding: 14px 38px;
 }
 
+.products__all-link:hover {
+    background: #F16D7F;
+    color: #FFFFFF;
+}
+
 .product__card {
     margin: 50px auto 65px;
     display: inline-flex;
