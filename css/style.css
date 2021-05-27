@@ -299,6 +299,26 @@ body {
     background-size: cover;
 }
 
+.products__filter {
+    margin: 51px 0 64px 16px;
+}
+
+.products__filter-left {
+    float: left;
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.products__filter-left-h {
+ margin: 0 11px 0 0;
+}
+
+.products__filter-pos {
+    position: relative;
+    left: -80px;
+}
+
 .products__header {
     font-weight: normal;
     font-size: 30px;
@@ -464,6 +484,35 @@ body {
     position: absolute;
     top: 13px;
     left: 23px;
+}
+
+.catalog-list {
+    display: flex;
+    justify-content: center;
+}
+
+.catalog-list__items {
+    margin: 0 0 96px;
+    border: 1px solid #EBEBEB;
+    padding: 12px 0;
+    display: flex;
+}
+
+.catalog-list__items-img {
+    margin: 0 15px 0;
+}
+
+.catalog-list__items-n {
+    color: #C4C4C4;
+    text-decoration: none;
+}
+
+.catalog-list__items-n:not(:last-child) {
+    margin: 0 22px 0 0;
+}
+
+.check-n {
+    color: #EF5B70;
 }
 
 .services {
