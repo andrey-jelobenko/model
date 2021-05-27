@@ -439,9 +439,6 @@ body {
 }
 
 .product__card-link-product {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     text-decoration: none;
 }
 
