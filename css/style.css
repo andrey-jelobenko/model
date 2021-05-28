@@ -136,7 +136,7 @@ body {
 
 .product__view {
     height: 777px;
-    background: url(../img/product-item-1.png) #F7F7F7 center top;
+    background: url(../img/product-item-1.jpg) #F7F7F7 center top;
     background-position-y: 11px;
     background-repeat: no-repeat;
     border: 1px solid #EAEAEA;
@@ -276,27 +276,47 @@ body {
 }
 
 .assment__women {
-    background-image: url(../img/women.png);
+    background-image: url(../img/women.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .assment__men {
-    background-image: url(../img/men.png);
+    background-image: url(../img/men.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .assment__kids {
-    background-image: url(../img/kids.png);
+    background-image: url(../img/kids.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .assment__acces {
-    background-image: url(../img/accesories.png);
+    background-image: url(../img/accesories.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.products__filter {
+    margin: 51px 0 64px 16px;
+}
+
+.products__filter-left {
+    float: left;
+    display: flex;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.products__filter-left-h {
+ margin: 0 11px 0 0;
+}
+
+.products__filter-pos {
+    position: relative;
+    left: -80px;
 }
 
 .products__header {
@@ -466,6 +486,35 @@ body {
     left: 23px;
 }
 
+.catalog-list {
+    display: flex;
+    justify-content: center;
+}
+
+.catalog-list__items {
+    margin: 0 0 96px;
+    border: 1px solid #EBEBEB;
+    padding: 12px 0;
+    display: flex;
+}
+
+.catalog-list__items-img {
+    margin: 0 15px 0;
+}
+
+.catalog-list__items-n {
+    color: #C4C4C4;
+    text-decoration: none;
+}
+
+.catalog-list__items-n:not(:last-child) {
+    margin: 0 22px 0 0;
+}
+
+.check-n {
+    color: #EF5B70;
+}
+
 .services {
     background-color: #222224;
 }
@@ -495,7 +544,7 @@ body {
 }
 
 .footer__top {
-    background: url(../img/bg-footer__top.png) no-repeat center bottom;
+    background: url(../img/bg-footer__top.jpg) no-repeat center bottom;
     background-size: cover;
     padding: 97px 0 156px;
 }
