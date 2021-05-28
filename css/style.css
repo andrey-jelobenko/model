@@ -136,7 +136,7 @@ body {
 
 .product__view {
     height: 777px;
-    background: url(../img/product-item-1.png) #F7F7F7 center top;
+    background: url(../img/product-item-1.jpg) #F7F7F7 center top;
     background-position-y: 11px;
     background-repeat: no-repeat;
     border: 1px solid #EAEAEA;
@@ -276,25 +276,25 @@ body {
 }
 
 .assment__women {
-    background-image: url(../img/women.png);
+    background-image: url(../img/women.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .assment__men {
-    background-image: url(../img/men.png);
+    background-image: url(../img/men.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .assment__kids {
-    background-image: url(../img/kids.png);
+    background-image: url(../img/kids.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .assment__acces {
-    background-image: url(../img/accesories.png);
+    background-image: url(../img/accesories.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -544,7 +544,7 @@ body {
 }
 
 .footer__top {
-    background: url(../img/bg-footer__top.png) no-repeat center bottom;
+    background: url(../img/bg-footer__top.jpg) no-repeat center bottom;
     background-size: cover;
     padding: 97px 0 156px;
 }
