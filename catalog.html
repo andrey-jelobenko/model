@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato&subset=cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="js/code.js"></script>
     <title>SHOP</title>
 </head>
 
@@ -32,7 +34,7 @@
                     </a>
                 </div>
                 <div class="header__right-item">
-                    <a class="header__right-link" href="#">
+                    <a class="header__right-link" href="cart.html">
                         <img src="img/basket.svg" alt="basket" width="32" height="29">
                         <span class="quantity">5</span>
                     </a>
@@ -63,23 +65,83 @@
 
                 <div class="products__filter">
                     <div class="products__filter-left">
-                        <span class="products__filter-left-h">FILTER</span>
-                        <img src="img/filter-icon.svg" alt="filter">
+                        <details open class="products__filter-left-drop">
+                            <summary class="products__filter-left-drop-div">
+                                <span class="products__filter-left-h">FILTER</span>
+                                <svg class="products__filter-left-svg" width="15" height="10" viewBox="0 0 15 10"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                                </svg>
+                            </summary>
+                            <details class="products__filter-left-det" open>
+                                <summary class="filter__drop-summary">CATEGORY</summary>
+                                <a href="#" class="filter__drop-span">Accessories</a>
+                                <a href="#" class="filter__drop-span">Bags</a>
+                                <a href="#" class="filter__drop-span">Denim</a>
+                                <a href="#" class="filter__drop-span">Hoodies & Sweatshirts</a>
+                                <a href="#" class="filter__drop-span">Jackets & Coats</a>
+                                <a href="#" class="filter__drop-span">Polos</a>
+                                <a href="#" class="filter__drop-span">Shirts</a>
+                                <a href="#" class="filter__drop-span">Shoes</a>
+                                <a href="#" class="filter__drop-span">Sweaters & Knits</a>
+                                <a href="#" class="filter__drop-span">T-Shirts</a>
+                                <a href="#" class="filter__drop-span">Tanks</a>
+                            </details>
+                            <details class="products__filter-left-det">
+                                <summary class="filter__drop-summary">BRAND</summary>
+                                <a href="#" class="filter__drop-span">Empty</a>
+                                <a href="#" class="filter__drop-span">Empty</a>
+                                <a href="#" class="filter__drop-span">Empty</a>
+                            </details>
+                            <details class="products__filter-left-det">
+                                <summary class="filter__drop-summary">DESIGNER</summary>
+                                <a href="#" class="filter__drop-span">Empty</a>
+                                <a href="#" class="filter__drop-span">Empty</a>
+                                <a href="#" class="filter__drop-span">Empty</a>
+                            </details>
+                        </details>
                     </div>
-                    <ul class="product__description-choose products__filter-pos">
-                        <li class="product__description-choose-li">
-                            TRENDING NOW
-                            <img class="product__description-choose-img" src="img/dwn.svg" alt="open">
-                        </li>
-                        <li class="product__description-choose-li">
-                            SIZE
-                            <img class="product__description-choose-img" src="img/dwn.svg" alt="open">
-                        </li>
-                        <li class="product__description-choose-li">
-                            PRICE
-                            <img class="product__description-choose-img" src="img/dwn.svg" alt="open">
-                        </li>
-                    </ul>
+                    <form action="#">
+                        <div class="product__description-choose">
+                            <div class="product__description-choose-div">
+                                TRENDING NOW
+                                <img class="product__description-choose-img" src="img/dwn.svg" alt="open">
+                            </div>
+                            <div class="product__description-choose-div">
+                                <div onclick="openClose('hidden__size');">
+                                    SIZE
+                                    <img class="product__description-choose-img" src="img/dwn.svg" alt="open">
+                                </div>
+                                <div class="product__description-choose-drop" id="hidden__size">
+                                    <div class="product__description-choose-drop-div">
+                                        <input type="checkbox" id="check1"
+                                            class="product__description-choose-chbx"><label
+                                            for="check1"><span>XS</span></label>
+                                    </div>
+                                    <div class="product__description-choose-drop-div">
+                                        <input type="checkbox" id="check2"
+                                            class="product__description-choose-chbx"><label
+                                            for="check2"><span>S</span></label>
+                                    </div>
+                                    <div class="product__description-choose-drop-div">
+                                        <input type="checkbox" id="check3"
+                                            class="product__description-choose-chbx"><label
+                                            for="check3"><span>M</span></label>
+                                    </div>
+                                    <div class="product__description-choose-drop-div">
+                                        <input type="checkbox" id="check4"
+                                            class="product__description-choose-chbx"><label
+                                            for="check4"><span>L</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product__description-choose-div">
+                                PRICE
+                                <img class="product__description-choose-img" src="img/dwn.svg" alt="open">
+                            </div>
+                        </div>
+                    </form>
                 </div>
 
                 <div class="products__items">
@@ -351,16 +413,20 @@
 
         <div class="container catalog-list">
             <div class="catalog-list__items">
-                <div class="catalog-list__items-img"><img src="img/catalog-list-prev.svg" alt="prev"></div>
-                <div>
-                    <a href="catalog.html" class="catalog-list__items-n check-n">1</a>
-                    <a href="catalog.html" class="catalog-list__items-n">2</a>
-                    <a href="catalog.html" class="catalog-list__items-n">3</a>
-                    <a href="catalog.html" class="catalog-list__items-n">4</a>
-                    <a href="catalog.html" class="catalog-list__items-n">5</a>
-                    <a href="catalog.html" class="catalog-list__items-n">6.....20</a>
-                </div>
-                <div class="catalog-list__items-img"><img src="img/catalog-list-next.svg" alt="next"></div>
+                <a href="#" class="catalog-list__items-img">
+                    <img src="img/catalog-list-prev.svg" alt="prev">
+                </a>
+                <a href="catalog.html" class="catalog-list__items-n check-n">1</a>
+                <a href="catalog.html" class="catalog-list__items-n">2</a>
+                <a href="catalog.html" class="catalog-list__items-n">3</a>
+                <a href="catalog.html" class="catalog-list__items-n">4</a>
+                <a href="catalog.html" class="catalog-list__items-n">5</a>
+                <a href="catalog.html" class="catalog-list__items-ne">6</a>
+                <span class="catalog-list__items-ne">.....</span>
+                <a href="catalog.html" class="catalog-list__items-ne">20</a>
+                <a href="#" class="catalog-list__items-img">
+                    <img src="img/catalog-list-next.svg" alt="next">
+                </a>
             </div>
         </div>
 
@@ -428,19 +494,23 @@
                     &copy; 2021 Brand All Rights Reserved.
                 </div>
                 <div class="footer__bottom-social">
-                    <a href="#" class="footer__bottom-social-link"><img src="img/social-1.png" alt="social network 1"
-                            width="32" height="31"></a>
-                    <a href="#" class="footer__bottom-social-link"><img src="img/social-2.png" alt="social network 2"
-                            width="32" height="31"></a>
-                    <a href="#" class="footer__bottom-social-link"><img src="img/social-3.png" alt="social network 3"
-                            width="32" height="31"></a>
-                    <a href="#" class="footer__bottom-social-link"><img src="img/social-4.png" alt="social network 4"
-                            width="32" height="31"></a>
+                    <a href="#" class="footer__bottom-social-link">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer__bottom-social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer__bottom-social-link">
+                        <i class="fab fa-pinterest-p"></i>
+                    </a>
+                    <a href="#" class="footer__bottom-social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
                 </div>
             </div>
         </div>
     </footer>
-
+    <script src="https://kit.fontawesome.com/d08eec8a33.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
