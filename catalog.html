@@ -45,9 +45,9 @@
 
     <main>
 
-        <section class="header__products">
-            <div class="container header__products-wrap">
-                <h1 class="header__products-left">NEW ARRIVALS</h1>
+        <section class="header-products">
+            <div class="container header-products__wrap">
+                <h1>NEW ARRIVALS</h1>
                 <nav>
                     <ol class="bread-crumbs">
                         <li class="bread-crumbs__li"><a href="index.html" class="bread-crumbs__link">HOME</a></li>
@@ -75,70 +75,66 @@
                                 </svg>
                             </summary>
                             <details class="products__filter-left-det" open>
-                                <summary class="filter__drop-summary">CATEGORY</summary>
-                                <a href="#" class="filter__drop-span">Accessories</a>
-                                <a href="#" class="filter__drop-span">Bags</a>
-                                <a href="#" class="filter__drop-span">Denim</a>
-                                <a href="#" class="filter__drop-span">Hoodies & Sweatshirts</a>
-                                <a href="#" class="filter__drop-span">Jackets & Coats</a>
-                                <a href="#" class="filter__drop-span">Polos</a>
-                                <a href="#" class="filter__drop-span">Shirts</a>
-                                <a href="#" class="filter__drop-span">Shoes</a>
-                                <a href="#" class="filter__drop-span">Sweaters & Knits</a>
-                                <a href="#" class="filter__drop-span">T-Shirts</a>
-                                <a href="#" class="filter__drop-span">Tanks</a>
+                                <summary class="products__filter-drop-summary">CATEGORY</summary>
+                                <a href="#" class="products__filter-drop-span">Accessories</a>
+                                <a href="#" class="products__filter-drop-span">Bags</a>
+                                <a href="#" class="products__filter-drop-span">Denim</a>
+                                <a href="#" class="products__filter-drop-span">Hoodies & Sweatshirts</a>
+                                <a href="#" class="products__filter-drop-span">Jackets & Coats</a>
+                                <a href="#" class="products__filter-drop-span">Polos</a>
+                                <a href="#" class="products__filter-drop-span">Shirts</a>
+                                <a href="#" class="products__filter-drop-span">Shoes</a>
+                                <a href="#" class="products__filter-drop-span">Sweaters & Knits</a>
+                                <a href="#" class="products__filter-drop-span">T-Shirts</a>
+                                <a href="#" class="products__filter-drop-span">Tanks</a>
                             </details>
                             <details class="products__filter-left-det">
-                                <summary class="filter__drop-summary">BRAND</summary>
-                                <a href="#" class="filter__drop-span">Empty</a>
-                                <a href="#" class="filter__drop-span">Empty</a>
-                                <a href="#" class="filter__drop-span">Empty</a>
+                                <summary class="products__filter-drop-summary">BRAND</summary>
+                                <a href="#" class="products__filter-drop-span">Empty</a>
+                                <a href="#" class="products__filter-drop-span">Empty</a>
+                                <a href="#" class="products__filter-drop-span">Empty</a>
                             </details>
                             <details class="products__filter-left-det">
-                                <summary class="filter__drop-summary">DESIGNER</summary>
-                                <a href="#" class="filter__drop-span">Empty</a>
-                                <a href="#" class="filter__drop-span">Empty</a>
-                                <a href="#" class="filter__drop-span">Empty</a>
+                                <summary class="products__filter-drop-summary">DESIGNER</summary>
+                                <a href="#" class="products__filter-drop-span">Empty</a>
+                                <a href="#" class="products__filter-drop-span">Empty</a>
+                                <a href="#" class="products__filter-drop-span">Empty</a>
                             </details>
                         </details>
                     </div>
                     <form action="#">
-                        <div class="product__description-choose">
-                            <div class="product__description-choose-div">
+                        <div class="product-choose">
+                            <div class="product-choose__div">
                                 TRENDING NOW
-                                <img class="product__description-choose-img" src="img/dwn.svg" alt="open">
+                                <img class="product-choose__img" src="img/dwn.svg" alt="open">
                             </div>
-                            <div class="product__description-choose-div">
+                            <div class="product-choose__div">
                                 <div onclick="openClose('hidden__size');">
                                     SIZE
-                                    <img class="product__description-choose-img" src="img/dwn.svg" alt="open">
+                                    <img class="product-choose__img" src="img/dwn.svg" alt="open">
                                 </div>
-                                <div class="product__description-choose-drop" id="hidden__size">
-                                    <div class="product__description-choose-drop-div">
-                                        <input type="checkbox" id="check1"
-                                            class="product__description-choose-chbx"><label
+                                <div class="product-choose__drop" id="hidden__size">
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check1" class="product-choose__chbx"><label
                                             for="check1"><span>XS</span></label>
                                     </div>
-                                    <div class="product__description-choose-drop-div">
-                                        <input type="checkbox" id="check2"
-                                            class="product__description-choose-chbx"><label
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check2" class="product-choose__chbx"><label
                                             for="check2"><span>S</span></label>
                                     </div>
-                                    <div class="product__description-choose-drop-div">
-                                        <input type="checkbox" id="check3"
-                                            class="product__description-choose-chbx"><label
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check3" class="product-choose__chbx"><label
                                             for="check3"><span>M</span></label>
                                     </div>
-                                    <div class="product__description-choose-drop-div">
-                                        <input type="checkbox" id="check4"
-                                            class="product__description-choose-chbx"><label
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check4" class="product-choose__chbx"><label
                                             for="check4"><span>L</span></label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="product__description-choose-div">
+                            <div class="product-choose__div">
                                 PRICE
-                                <img class="product__description-choose-img" src="img/dwn.svg" alt="open">
+                                <img class="product-choose__img" src="img/dwn.svg" alt="open">
                             </div>
                         </div>
                     </form>
@@ -152,9 +148,9 @@
                                 <img src="img/products-card-1.jpg" alt="card 1" width="360" height="420">
                             </div>
                             <div class="products__items-img-hover">
-                                <div class="product__card-link">
-                                    <a href="#" class="product__card-addcart">
-                                        <span class="product__card-cart">
+                                <div class="products__items-card-link">
+                                    <a href="#" class="products__items-card-addcart">
+                                        <span class="products__items-card-cart">
                                             Add to Cart
                                         </span>
                                     </a>
@@ -174,7 +170,7 @@
                                     Australian arbiter of cool Kym
                                     Ellery teams up with Moda Operandi.</p>
                             </div>
-                            <span class="products__items-info-price">$52.00</span>
+                            <strong class="products__items-info-price">$52.00</strong>
                         </div>
                     </article>
                     <article class="products__items-card">
@@ -183,9 +179,9 @@
                                 <img src="img/products-card-7.jpg" alt="card 7" width="360" height="420">
                             </div>
                             <div class="products__items-img-hover">
-                                <div class="product__card-link">
-                                    <a href="#" class="product__card-addcart">
-                                        <span class="product__card-cart">
+                                <div class="products__items-card-link">
+                                    <a href="#" class="products__items-card-addcart">
+                                        <span class="products__items-card-cart">
                                             Add to Cart
                                         </span>
                                     </a>
@@ -202,7 +198,7 @@
                                     Australian arbiter of cool Kym
                                     Ellery teams up with Moda Operandi.</p>
                             </div>
-                            <span class="products__items-info-price">$52.00</span>
+                            <strong class="products__items-info-price">$52.00</strong>
                         </div>
                     </article>
                     <article class="products__items-card">
@@ -211,9 +207,9 @@
                                 <img src="img/products-card-3.jpg" alt="card 3" width="360" height="420">
                             </div>
                             <div class="products__items-img-hover">
-                                <div class="product__card-link">
-                                    <a href="#" class="product__card-addcart">
-                                        <span class="product__card-cart">
+                                <div class="products__items-card-link">
+                                    <a href="#" class="products__items-card-addcart">
+                                        <span class="products__items-card-cart">
                                             Add to Cart
                                         </span>
                                     </a>
@@ -230,7 +226,7 @@
                                     Australian arbiter of cool Kym
                                     Ellery teams up with Moda Operandi.</p>
                             </div>
-                            <span class="products__items-info-price">$52.00</span>
+                            <strong class="products__items-info-price">$52.00</strong>
                         </div>
                     </article>
                     <article class="products__items-card">
@@ -239,9 +235,9 @@
                                 <img src="img/products-card-4.jpg" alt="card 4" width="360" height="420">
                             </div>
                             <div class="products__items-img-hover">
-                                <div class="product__card-link">
-                                    <a href="#" class="product__card-addcart">
-                                        <span class="product__card-cart">
+                                <div class="products__items-card-link">
+                                    <a href="#" class="products__items-card-addcart">
+                                        <span class="products__items-card-cart">
                                             Add to Cart
                                         </span>
                                     </a>
@@ -258,7 +254,7 @@
                                     Australian arbiter of cool Kym
                                     Ellery teams up with Moda Operandi.</p>
                             </div>
-                            <span class="products__items-info-price">$52.00</span>
+                            <strong class="products__items-info-price">$52.00</strong>
                         </div>
                     </article>
                     <article class="products__items-card">
@@ -267,9 +263,9 @@
                                 <img src="img/products-card-8.jpg" alt="card 8" width="360" height="420">
                             </div>
                             <div class="products__items-img-hover">
-                                <div class="product__card-link">
-                                    <a href="#" class="product__card-addcart">
-                                        <span class="product__card-cart">
+                                <div class="products__items-card-link">
+                                    <a href="#" class="products__items-card-addcart">
+                                        <span class="products__items-card-cart">
                                             Add to Cart
                                         </span>
                                     </a>
@@ -286,7 +282,7 @@
                                     Australian arbiter of cool Kym
                                     Ellery teams up with Moda Operandi.</p>
                             </div>
-                            <span class="products__items-info-price">$52.00</span>
+                            <strong class="products__items-info-price">$52.00</strong>
                         </div>
                     </article>
                     <article class="products__items-card">
@@ -295,9 +291,9 @@
                                 <img src="img/products-card-9.jpg" alt="card 9" width="360" height="420">
                             </div>
                             <div class="products__items-img-hover">
-                                <div class="product__card-link">
-                                    <a href="#" class="product__card-addcart">
-                                        <span class="product__card-cart">
+                                <div class="products__items-card-link">
+                                    <a href="#" class="products__items-card-addcart">
+                                        <span class="products__items-card-cart">
                                             Add to Cart
                                         </span>
                                     </a>
@@ -317,7 +313,7 @@
                                     Australian arbiter of cool Kym
                                     Ellery teams up with Moda Operandi.</p>
                             </div>
-                            <span class="products__items-info-price">$52.00</span>
+                            <strong class="products__items-info-price">$52.00</strong>
                         </div>
                     </article>
                     <article class="products__items-card">
@@ -326,9 +322,9 @@
                                 <img src="img/products-card-10.jpg" alt="card 10" width="360" height="420">
                             </div>
                             <div class="products__items-img-hover">
-                                <div class="product__card-link">
-                                    <a href="#" class="product__card-addcart">
-                                        <span class="product__card-cart">
+                                <div class="products__items-card-link">
+                                    <a href="#" class="products__items-card-addcart">
+                                        <span class="products__items-card-cart">
                                             Add to Cart
                                         </span>
                                     </a>
@@ -345,7 +341,7 @@
                                     Australian arbiter of cool Kym
                                     Ellery teams up with Moda Operandi.</p>
                             </div>
-                            <span class="products__items-info-price">$52.00</span>
+                            <strong class="products__items-info-price">$52.00</strong>
                         </div>
                     </article>
                     <article class="products__items-card">
@@ -354,9 +350,9 @@
                                 <img src="img/products-card-11.jpg" alt="card 11" width="360" height="420">
                             </div>
                             <div class="products__items-img-hover">
-                                <div class="product__card-link">
-                                    <a href="#" class="product__card-addcart">
-                                        <span class="product__card-cart">
+                                <div class="products__items-card-link">
+                                    <a href="#" class="products__items-card-addcart">
+                                        <span class="products__items-card-cart">
                                             Add to Cart
                                         </span>
                                     </a>
@@ -376,7 +372,7 @@
                                     Australian arbiter of cool Kym
                                     Ellery teams up with Moda Operandi.</p>
                             </div>
-                            <span class="products__items-info-price">$52.00</span>
+                            <strong class="products__items-info-price">$52.00</strong>
                         </div>
                     </article>
                     <article class="products__items-card">
@@ -385,9 +381,9 @@
                                 <img src="img/products-card-12.jpg" alt="card 12" width="360" height="420">
                             </div>
                             <div class="products__items-img-hover">
-                                <div class="product__card-link">
-                                    <a href="#" class="product__card-addcart">
-                                        <span class="product__card-cart">
+                                <div class="products__items-card-link">
+                                    <a href="#" class="products__items-card-addcart">
+                                        <span class="products__items-card-cart">
                                             Add to Cart
                                         </span>
                                     </a>
@@ -404,7 +400,7 @@
                                     Australian arbiter of cool Kym
                                     Ellery teams up with Moda Operandi.</p>
                             </div>
-                            <span class="products__items-info-price">$52.00</span>
+                            <strong class="products__items-info-price">$52.00</strong>
                         </div>
                     </article>
                 </div>
@@ -461,19 +457,19 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__top">
-            <div class="container footer__top-wrap">
-                <div class="footer__top-left">
-                    <img src="img/footer__top-left-img.png" alt="lady" width="96" height="96">
-                    <p class="footer__top-left-text">
+        <div class="footer__subscribe">
+            <div class="container footer__subscribe-wrap">
+                <div class="footer__subscribe-left">
+                    <img src="img/footer__subscribe-left-img.png" alt="lady" width="96" height="96">
+                    <p class="footer__subscribe-left-text">
                         &quot;Vestibulum quis porttitor dui! Quisque viverra nunc&nbsp;mi, a&nbsp;pulvinar purus
                         condimentum&quot;
                     </p>
                 </div>
-                <div class="footer__top-right">
+                <div class="footer__subscribe-right">
                     <div class="subscribe">
                         <form action="#">
-                            <p class="footer__top-right-form">
+                            <p class="footer__subscribe-right-form">
                                 <span class="subscribe__text-h">SUBSCRIBE</span><br><span class="subscribe__text-p">FOR
                                     OUR
                                     NEWLETTER AND PROMOTION</span>
@@ -488,22 +484,22 @@
                 </div>
             </div>
         </div>
-        <div class="footer__bottom">
-            <div class="container footer__bottom-wrap">
-                <div class="footer__bottom-copyright">
+        <div class="footer__copyright">
+            <div class="container footer__copyright-wrap">
+                <div class="footer__copyright-copyright">
                     &copy; 2021 Brand All Rights Reserved.
                 </div>
-                <div class="footer__bottom-social">
-                    <a href="#" class="footer__bottom-social-link">
+                <div class="footer__copyright-social">
+                    <a href="#" class="footer__copyright-social-link">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="footer__bottom-social-link">
+                    <a href="#" class="footer__copyright-social-link">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="footer__bottom-social-link">
+                    <a href="#" class="footer__copyright-social-link">
                         <i class="fab fa-pinterest-p"></i>
                     </a>
-                    <a href="#" class="footer__bottom-social-link">
+                    <a href="#" class="footer__copyright-social-link">
                         <i class="fab fa-twitter"></i>
                     </a>
                 </div>
