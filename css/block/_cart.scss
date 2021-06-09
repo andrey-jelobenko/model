@@ -53,6 +53,10 @@
                         color: $color-heading-cart;
                         margin: 0 0 42px 0;
                         font-weight: normal;
+
+                        & span {
+                            display: block; 
+                        }
                     }
                     
                     & p {

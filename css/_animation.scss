@@ -1,0 +1,228 @@
+// animation start
+@keyframes ex0 {
+    0% { transform: rotate(0deg); }
+    3% { transform: rotate(-2deg); }
+    6% { transform: rotate(0deg); }
+    9% { transform: rotate(2deg); }
+    12% { transform: rotate(0deg); }
+    15% { transform: rotate(-2deg); }
+    18% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+@keyframes ex1 {
+    0% { transform: scale(1); }
+    30% { transform: scale(1.7); }
+    100% { transform: scale(1); }
+}
+@keyframes ex2 {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.59); }
+    100% { transform: scale(1); }
+}
+// @keyframes ex2 {
+//     0% { transform: scale(1); }
+//     50% { transform: scale(0.59); }
+//     100% { transform: scale(1); }
+// }
+@keyframes ex201 {
+    0% { transform: scale(1); }
+    20% { transform: scale(0.8); }
+    50% { transform: scale(1.4); }
+    100% { transform: scale(1); }
+}
+@keyframes ex202 {
+    0% { transform: scale(1); }
+    20% { transform: scale(1); }
+    30% { transform: scale(0.65); }
+    100% { transform: scale(1); }
+}
+@keyframes ex203 {
+    0% { transform: scale(1); }
+    15% { transform: scale(.59); }
+    40% { transform: scale(1.2); }
+    60% { transform: scale(.9); }
+    100% { transform: scale(1); }
+}
+@keyframes ex204 {
+    0% { transform: scale(1); }
+    5% { transform: scale(1.3); }
+    10% { transform: scale(0.7); }
+    20% { transform: scale(1.5); }
+    100% { transform: scale(1); }
+}
+@keyframes ex205 {
+    0% { transform: scale(1); }
+    5% { transform: scale(0.8); }
+    15% { transform: scale(0.8); }
+    45% { transform: scale(1.6); }
+    100% { transform: scale(1); }
+}
+@keyframes ex206 {
+    0% { transform: scale(1); }
+    20% { transform: scale(1.4); }
+    45% { transform: scale(0.8); }
+    85% { transform: scale(1.8); }
+    100% { transform: scale(1); }
+}
+@keyframes ex208 {
+    0% { transform: scale(1); }
+    15% { transform: scale(0.7); }
+    30% { transform: scale(1.1); }
+    45% { transform: scale(0.6); }
+    60% { transform: scale(1.2); }
+    75% { transform: scale(0.8); }
+    90% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+@keyframes ex209 {
+    0% { transform: scale(1); }
+    5% { transform: scale(0.7); }
+    20% { transform: scale(1.1); }
+    40% { transform: scale(0.6); }
+    65% { transform: scale(1.2); }
+    75% { transform: scale(0.6); }
+    81% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+@keyframes ex210 {
+    0% { transform: scale(1); }
+    15% { transform: scale(0.85); }
+    30% { transform: scale(1.2); }
+    45% { transform: scale(0.7); }
+    60% { transform: scale(1.1); }
+    75% { transform: scale(0.6); }
+    90% { transform: scale(1.3); }
+    100% { transform: scale(1); }
+}
+@keyframes ex212 {
+    0% { transform: scale(1); }
+    10% { transform: scale(1.1); }
+    20% { transform: scale(1.2); }
+    30% { transform: scale(1.3); }
+    40% { transform: scale(1.2); }
+    50% { transform: scale(1.1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(0.9); }
+    80% { transform: scale(0.8); }
+    90% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+@keyframes ex213 {
+    0% { transform: scale(1); }
+    10% { transform: scale(0.9); }
+    20% { transform: scale(0.8); }
+    30% { transform: scale(0.7); }
+    40% { transform: scale(0.8); }
+    50% { transform: scale(0.9); }
+    60% { transform: scale(1); }
+    70% { transform: scale(1.1); }
+    80% { transform: scale(1.2); }
+    90% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+@keyframes ex214 {
+    0% { transform: scale(1); }
+    20% { transform: scale(0.8); }
+    50% { transform: scale(1.4); }
+    100% { transform: scale(1); }
+}
+@keyframes ex215 {
+    0% { transform: scale(1); }
+    20% { transform: scale(1.4); }
+    45% { transform: scale(0.8); }
+    85% { transform: scale(1.8); }
+    100% { transform: scale(1); }
+}
+@keyframes ex216 {
+    0% { transform: scale(1); }
+    10% { transform: scale(1.1); }
+    20% { transform: scale(1.2); }
+    30% { transform: scale(1.3); }
+    40% { transform: scale(1.2); }
+    50% { transform: scale(1.1); }
+    60% { transform: scale(1); }
+    70% { transform: scale(0.9); }
+    80% { transform: scale(0.8); }
+    90% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+@keyframes ex217 {
+    0% { transform: scale(1); }
+    5% { transform: scale(0.8); }
+    15% { transform: scale(0.8); }
+    45% { transform: scale(1.6); }
+    100% { transform: scale(1); }
+}
+@keyframes ex218 {
+    0% { transform: scale(1); }
+    5% { transform: scale(0.7); }
+    20% { transform: scale(1.1); }
+    40% { transform: scale(0.6); }
+    65% { transform: scale(1.2); }
+    75% { transform: scale(0.6); }
+    81% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+.products__all {
+    animation: ex0 2s infinite;
+}
+
+.products__all:hover {
+    animation-play-state: paused;
+}
+
+.products__all-link:hover {
+    animation: ex1 5s;
+}
+.products__all-link:hover .products__all-link-span {
+    animation: ex2 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(1) {
+    animation: ex201 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(2) {
+    animation: ex202 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(3) {
+    animation: ex203 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(4) {
+    animation: ex204 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(5) {
+    animation: ex205 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(6) {
+    animation: ex206 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(8) {
+    animation: ex208 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(9) {
+    animation: ex209 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(10) {
+    animation: ex210 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(12) {
+    animation: ex212 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(13) {
+    animation: ex213 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(14) {
+    animation: ex214 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(15) {
+    animation: ex215 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(16) {
+    animation: ex216 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(17) {
+    animation: ex217 5s;
+}
+.products__all-link:hover .products__all-link-span:nth-child(18) {
+    animation: ex218 5s;
+}
+// animation end

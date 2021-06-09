@@ -1,5 +1,7 @@
 @import "vars";
+@import "animation";
 @import "block/cart";
+@import "block/registration";
 
 * {
     margin: 0;
@@ -135,6 +137,7 @@ body {
 .intro__text-brend {
     font-size: 48px;
     line-height: 58px;
+    display: block;
 }
 
 .intro__text-fashion {
@@ -261,6 +264,16 @@ body {
     margin: 0 0 5px 0;
 }
 
+.product-choose__drop-div {
+    display: flex;
+    align-items: center;
+}
+
+.product-choose__drop-div input {
+    width: 12px;
+    height: 12px;
+}
+
 .product-choose__div:not(:first-child) {
     margin: 0 0 0 23px;
 }
@@ -301,9 +314,9 @@ body {
     font-size: 16px;
     color: #FFFFFF;
     font-weight: normal;
-    background: rgba(33, 22, 22, 0.7);
-    width: inherit;
-    height: inherit;
+    // background: rgba(33, 22, 22, 0.7);
+    // width: inherit;
+    // height: inherit;
 }
 
 .assment__item-h2-last {
@@ -327,25 +340,25 @@ body {
 }
 
 .assment__women {
-    background-image: url(../img/women.jpg);
+    background-image: url(../img/assment-filter.png), url(../img/women.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .assment__men {
-    background-image: url(../img/men.jpg);
+    background-image: url(../img/assment-filter.png), url(../img/men.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .assment__kids {
-    background-image: url(../img/kids.jpg);
+    background-image: url(../img/assment-filter.png), url(../img/kids.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .assment__acces {
-    background-image: url(../img/accesories.jpg);
+    background-image: url(../img/assment-filter.png), url(../img/accesories.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -536,6 +549,7 @@ body {
 }
 
 .products__all-link {
+    display: flex;
     color: #F26376;
     border: 1px solid #FF6A6A;
     text-decoration: none;
@@ -670,7 +684,8 @@ body {
 }
 
 .footer__subscribe {
-    background: linear-gradient(rgba(244, 244, 244, 0.7), rgba(244, 244, 244, 0.7)), url(../img/bg-footer__subscribe.jpg) no-repeat 100% 100%;
+    background-image: url(../img/bg-footer__filter.png), url(../img/bg-footer__subscribe.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     padding: 97px 0 156px;
 }
@@ -706,6 +721,7 @@ body {
     font-size: 24px;
     line-height: 167.2%;
     color: #222224;
+    display: block;
 }
 
 .subscribe__text-p {
