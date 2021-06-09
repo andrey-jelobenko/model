@@ -43,10 +43,13 @@
         &-gender {
             display: flex;
             margin: 11px 0 33px;
+            align-items: center;
 
             & {
                 & input[type="radio"] {
                     margin: 0 10px 0 0;
+                    width: 17px;
+                    height: 17px;
                 }
             & label {
                 display: flex;
