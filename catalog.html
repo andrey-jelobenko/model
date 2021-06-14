@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="js/code.js"></script>
     <title>SHOP</title>
 </head>
 
@@ -109,40 +110,143 @@
     </header>
 
     <main>
-        <section class="intro">
-            <div class="container intro__wrap">
-                <div class="intro__wrap-height"></div>
-                <div class="intro__text">
-                    <h1 class="intro__text-h1">
-                        <span class="intro__text-brend">THE BRAND</span>
-                        OF LUXERIOUS <span class="intro__text-fashion">FASHION</span>
-                    </h1>
-                </div>
-            </div>
-        </section>
 
-        <section class="assment">
-            <div class="container assment__wrap">
-                <div class="assment__item assment__women">
-                    <h2 class="assment__item-h2">30% OFF<span>FOR WOMEN</span></h2>
-                </div>
-                <div class="assment__item assment__men">
-                    <h2 class="assment__item-h2">HOT DEAL<span>FOR MEN</span></h2>
-                </div>
-                <div class="assment__item assment__kids">
-                    <h2 class="assment__item-h2">NEW ARRIVALS<span>FOR KIDS</span></h2>
-                </div>
-                <div class="assment__item assment__acces">
-                    <h2 class="assment__item-h2 assment__item-h2-last">LUXIROUS & TRENDY<span>ACCESORIES</span>
-                    </h2>
-                </div>
+        <section class="header-products">
+            <div class="container header-products__wrap">
+                <h1>NEW ARRIVALS</h1>
+                <nav>
+                    <ol class="bread-crumbs">
+                        <li class="bread-crumbs__li"><a href="index.html" class="bread-crumbs__link">HOME</a></li>
+                        <li class="bread-crumbs__li">/</li>
+                        <li class="bread-crumbs__li"><a href="#" class="bread-crumbs__link">MEN</a></li>
+                        <li class="bread-crumbs__li">/</li>
+                        <li class="bread-crumbs__li"><a href="#" class="bread-crumbs__link">NEW ARRIVALS</a></li>
+                    </ol>
+                </nav>
             </div>
         </section>
 
         <section class="products">
             <div class="container">
-                <h2 class="products__header">Fetured Items</h2>
-                <p class="products__text">Shop for items based on what we featured in this week</p>
+                <h2 class="products__items-h2">Fetured Items</h2>
+                <div class="products__filter">
+                    <div class="products__filter-left">
+                        <details class="products__filter-left-drop">
+                            <summary class="products__filter-left-drop-div">
+                                <span class="products__filter-left-h">FILTER</span>
+                                <svg class="products__filter-left-svg" width="15" height="10" viewBox="0 0 15 10"
+                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" />
+                                </svg>
+                            </summary>
+                            <details class="products__filter-left-det" open>
+                                <summary class="products__filter-drop-summary">CATEGORY</summary>
+                                <a href="#" class="products__filter-drop-span">Accessories</a>
+                                <a href="#" class="products__filter-drop-span">Bags</a>
+                                <a href="#" class="products__filter-drop-span">Denim</a>
+                                <a href="#" class="products__filter-drop-span">Hoodies & Sweatshirts</a>
+                                <a href="#" class="products__filter-drop-span">Jackets & Coats</a>
+                                <a href="#" class="products__filter-drop-span">Polos</a>
+                                <a href="#" class="products__filter-drop-span">Shirts</a>
+                                <a href="#" class="products__filter-drop-span">Shoes</a>
+                                <a href="#" class="products__filter-drop-span">Sweaters & Knits</a>
+                                <a href="#" class="products__filter-drop-span">T-Shirts</a>
+                                <a href="#" class="products__filter-drop-span">Tanks</a>
+                            </details>
+                            <details class="products__filter-left-det">
+                                <summary class="products__filter-drop-summary">BRAND</summary>
+                                <a href="#" class="products__filter-drop-span">Empty</a>
+                                <a href="#" class="products__filter-drop-span">Empty</a>
+                                <a href="#" class="products__filter-drop-span">Empty</a>
+                            </details>
+                            <details class="products__filter-left-det">
+                                <summary class="products__filter-drop-summary">DESIGNER</summary>
+                                <a href="#" class="products__filter-drop-span">Empty</a>
+                                <a href="#" class="products__filter-drop-span">Empty</a>
+                                <a href="#" class="products__filter-drop-span">Empty</a>
+                            </details>
+                        </details>
+                    </div>
+                    <form action="#" class="products__form">
+                        <div class="product-choose">
+                            <div class="product-choose__div">
+                                <div class="product-choose__align" onclick="openClose('hidden__trending');">
+                                    TRENDING NOW
+                                    <img class="product-choose__img" src="img/dwn.svg" alt="open">
+                                </div>
+                                <div class="product-choose__drop" id="hidden__trending">
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check11" class="product-choose__chbx"><label
+                                            for="check1"><span>Empty</span></label>
+                                    </div>
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check12" class="product-choose__chbx"><label
+                                            for="check2"><span>Empty</span></label>
+                                    </div>
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check13" class="product-choose__chbx"><label
+                                            for="check3"><span>Empty</span></label>
+                                    </div>
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check14" class="product-choose__chbx"><label
+                                            for="check4"><span>Empty</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-choose__div">
+                                <div class="product-choose__align" onclick="openClose('hidden__size');">
+                                    SIZE
+                                    <img class="product-choose__img" src="img/dwn.svg" alt="open">
+                                </div>
+                                <div class="product-choose__drop" id="hidden__size">
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check21" class="product-choose__chbx"><label
+                                            for="check1"><span>XS</span></label>
+                                    </div>
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check22" class="product-choose__chbx"><label
+                                            for="check2"><span>S</span></label>
+                                    </div>
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check23" class="product-choose__chbx"><label
+                                            for="check3"><span>M</span></label>
+                                    </div>
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check24" class="product-choose__chbx"><label
+                                            for="check4"><span>L</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-choose__div">
+                                <div class="product-choose__align" onclick="openClose('hidden__price');">
+                                    PRICE
+                                    <img class="product-choose__img" src="img/dwn.svg" alt="open">
+                                </div>
+                                <div class="product-choose__drop hidden__price" id="hidden__price">
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check31" class="product-choose__chbx"><label
+                                            for="check1"><span>Empty</span></label>
+                                    </div>
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check32" class="product-choose__chbx"><label
+                                            for="check2"><span>Empty</span></label>
+                                    </div>
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check33" class="product-choose__chbx"><label
+                                            for="check3"><span>Empty</span></label>
+                                    </div>
+                                    <div class="product-choose__drop-div">
+                                        <input type="checkbox" id="check34" class="product-choose__chbx"><label
+                                            for="check4"><span>Empty</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="products__filter-right"></div>
+                </div>
+
                 <div class="products__items">
                     <article class="products__items-card">
                         <div class="products__items-block">
@@ -178,7 +282,7 @@
                     <article class="products__items-card">
                         <div class="products__items-block">
                             <div class="products__items-img">
-                                <img src="img/products-card-2.jpg" alt="card 2" width="360" height="420">
+                                <img src="img/products-card-7.jpg" alt="card 7" width="360" height="420">
                             </div>
                             <div class="products__items-img-hover">
                                 <div class="products__items-card-link">
@@ -262,7 +366,7 @@
                     <article class="products__items-card">
                         <div class="products__items-block">
                             <div class="products__items-img">
-                                <img src="img/products-card-5.jpg" alt="card 5" width="360" height="420">
+                                <img src="img/products-card-8.jpg" alt="card 8" width="360" height="420">
                             </div>
                             <div class="products__items-img-hover">
                                 <div class="products__items-card-link">
@@ -290,7 +394,7 @@
                     <article class="products__items-card">
                         <div class="products__items-block">
                             <div class="products__items-img">
-                                <img src="img/products-card-6.jpg" alt="card 6" width="360" height="420">
+                                <img src="img/products-card-9.jpg" alt="card 9" width="360" height="420">
                             </div>
                             <div class="products__items-img-hover">
                                 <div class="products__items-card-link">
@@ -318,31 +422,115 @@
                             <strong class="products__items-info-price">$52.00</strong>
                         </div>
                     </article>
-                </div>
-                <div class="products__all">
-                    <a href="catalog.html" class="products__all-link">
-                        <span class="products__all-link-span">B</span>
-                        <span class="products__all-link-span">r</span>
-                        <span class="products__all-link-span">o</span>
-                        <span class="products__all-link-span">w</span>
-                        <span class="products__all-link-span">s</span>
-                        <span class="products__all-link-span">e</span>
-                        <span>&nbsp;</span>
-                        <span class="products__all-link-span">A</span>
-                        <span class="products__all-link-span">l</span>
-                        <span class="products__all-link-span">l</span>
-                        <span>&nbsp;</span>
-                        <span class="products__all-link-span">P</span>
-                        <span class="products__all-link-span">r</span>
-                        <span class="products__all-link-span">o</span>
-                        <span class="products__all-link-span">d</span>
-                        <span class="products__all-link-span">u</span>
-                        <span class="products__all-link-span">c</span>
-                        <span class="products__all-link-span">t</span>
-                    </a>
+                    <article class="products__items-card">
+                        <div class="products__items-block">
+                            <div class="products__items-img">
+                                <img src="img/products-card-10.jpg" alt="card 10" width="360" height="420">
+                            </div>
+                            <div class="products__items-img-hover">
+                                <div class="products__items-card-link">
+                                    <a href="#" class="products__items-card-addcart">
+                                        <span class="products__items-card-cart">
+                                            Add to Cart
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__items-info">
+                            <div>
+                                <a href="product.html" class="products__items-link">
+                                    <h3 class="products__items-info-h3">ELLERY X M'O CAPSULE</h3>
+                                </a>
+                                <p class="products__items-info-text">Known for her sculptural takes on traditional
+                                    tailoring,
+                                    Australian arbiter of cool Kym
+                                    Ellery teams up with Moda Operandi.</p>
+                            </div>
+                            <strong class="products__items-info-price">$52.00</strong>
+                        </div>
+                    </article>
+                    <article class="products__items-card">
+                        <div class="products__items-block">
+                            <div class="products__items-img">
+                                <img src="img/products-card-11.jpg" alt="card 11" width="360" height="420">
+                            </div>
+                            <div class="products__items-img-hover">
+                                <div class="products__items-card-link">
+                                    <a href="#" class="products__items-card-addcart">
+                                        <span class="products__items-card-cart">
+                                            Add to Cart
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__items-info">
+                            <div>
+                                <a href="product.html" class="products__items-link">
+                                    <h3 class="products__items-info-h3">ELLERY X M'O CAPSULE</h3>
+                                </a>
+                                <p class="products__items-info-text">Known for her sculptural takes on traditional
+                                    tailoring,
+                                    Australian arbiter of cool Kym
+                                    Ellery teams up with Moda Operandi.Known for her sculptural takes on traditional
+                                    tailoring,
+                                    Australian arbiter of cool Kym
+                                    Ellery teams up with Moda Operandi.</p>
+                            </div>
+                            <strong class="products__items-info-price">$52.00</strong>
+                        </div>
+                    </article>
+                    <article class="products__items-card products__items-card-hidden">
+                        <div class="products__items-block">
+                            <div class="products__items-img">
+                                <img src="img/products-card-12.jpg" alt="card 12" width="360" height="420">
+                            </div>
+                            <div class="products__items-img-hover">
+                                <div class="products__items-card-link">
+                                    <a href="#" class="products__items-card-addcart">
+                                        <span class="products__items-card-cart">
+                                            Add to Cart
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="products__items-info">
+                            <div>
+                                <a href="product.html" class="products__items-link">
+                                    <h3 class="products__items-info-h3">ELLERY X M'O CAPSULE</h3>
+                                </a>
+                                <p class="products__items-info-text">Known for her sculptural takes on traditional
+                                    tailoring,
+                                    Australian arbiter of cool Kym
+                                    Ellery teams up with Moda Operandi.</p>
+                            </div>
+                            <strong class="products__items-info-price">$52.00</strong>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
+
+        <div class="container catalog-list">
+            <div class="catalog-list__items">
+                <a href="#" class="catalog-list__items-img">
+                    <img src="img/catalog-list-prev.svg" alt="prev">
+                </a>
+                <a href="catalog.html" class="catalog-list__items-n check-n">1</a>
+                <a href="catalog.html" class="catalog-list__items-n">2</a>
+                <a href="catalog.html" class="catalog-list__items-n">3</a>
+                <a href="catalog.html" class="catalog-list__items-n">4</a>
+                <a href="catalog.html" class="catalog-list__items-n">5</a>
+                <a href="catalog.html" class="catalog-list__items-ne">6</a>
+                <span class="catalog-list__items-ne">.....</span>
+                <a href="catalog.html" class="catalog-list__items-ne">20</a>
+                <a href="#" class="catalog-list__items-img">
+                    <img src="img/catalog-list-next.svg" alt="next">
+                </a>
+            </div>
+        </div>
 
         <section class="services">
             <div class="container services__wrap">
