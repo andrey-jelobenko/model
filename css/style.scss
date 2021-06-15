@@ -121,13 +121,13 @@ body {
 
 .intro__wrap {
     background-image: url('../img/intro.png');
-    background-size: 29%;
-    height: calc(100vh - 76px);
+    background-size: 33%;
+    // height: calc(100vh - 76px);
     background-repeat: no-repeat;
     background-position: left bottom;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
+    // justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .intro__wrap-height {
@@ -136,15 +136,17 @@ body {
 
 .intro__text {
     border-left: 12px solid $color-second;
-    position: relative;
-    right: 8.2%;
-    top: -6.8%;
+    // position: relative;
+    // right: 8.2%;
+    // top: -6.8%;
+    margin: 25.4% 0 0 55.65%;
 }
 
-.intro__text-h1 {
+.intro__text-main {
     padding: 0 0 0 16px;
     font-size: 32px;
     line-height: 38px;
+    max-width: 390px;
 }
 
 .intro__text-brend {
@@ -531,6 +533,10 @@ body {
     position: relative;
 }
 
+.products__items-img {
+    display: flex;
+}
+
 .products__items-img-hover {
     position: absolute;
     top: 0;
@@ -541,7 +547,7 @@ body {
     display: none;
 }
 
-.products__items-block:hover .products__items-img-hover {
+.products__items-card:hover .products__items-img-hover {
     display: block;
 }
 
@@ -920,7 +926,7 @@ body {
     .intro {
         margin: 0 0 20px 0;
     }
-    .intro__text-h1 {
+    .intro__text-main {
         font-size: 24px;
         line-height: 29px;
     }
@@ -929,11 +935,11 @@ body {
         line-height: 53px;
     }
     .intro__text {
-        right: 3%;
-        top: -6.8%;
+        margin: 17% 0 0 55.65%;
     }
     .intro__wrap {
         background-position: 14% bottom;
+        background-size: 24%
     }
     .intro__wrap-height {
         padding: 49% 0 0 0;
@@ -1023,7 +1029,16 @@ body {
         font-size: 38px;
         line-height: 46px;
     }
-    .intro__text-h1 {
+    .intro__wrap {
+        height: 363px;
+        justify-content: center;
+        align-items: center;
+        background: none;
+    }
+    .intro__text {
+        margin: 0;
+    }
+    .intro__text-main {
         font-size: 20px;
         line-height: 24px;
     }
@@ -1115,20 +1130,6 @@ body {
     }
     .footer__subscribe-right {
         margin-top: 59px;
-    }
-}
-
-@media (max-width: 470px) {
-    .intro__wrap {
-        background: none;
-    }
-    .intro__wrap {
-        height: 363px;
-        justify-content: center;
-    }
-    .intro__text {
-        right: 0;
-        top: 0;
     }
 }
 
