@@ -90,6 +90,24 @@
   margin: 0 0 0 24px;
   font-size: 18px;
   line-height: 22px;
+  color: #000000;
+  width: 43px;
+  outline: none;
+}
+
+.cart__item-text-count::-webkit-input-placeholder {
+  color: #656565;
+}
+
+.cart__item-text-count:-ms-input-placeholder {
+  color: #656565;
+}
+
+.cart__item-text-count::-ms-input-placeholder {
+  color: #656565;
+}
+
+.cart__item-text-count::placeholder {
   color: #656565;
 }
 
@@ -520,6 +538,12 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  display: -ms-grid;
+  display: grid;
+  min-height: 100vh;
+  -ms-grid-rows: auto 1fr min-content;
+      grid-template-rows: auto 1fr -webkit-min-content;
+      grid-template-rows: auto 1fr min-content;
 }
 
 .container {
@@ -905,7 +929,7 @@ body {
   background-size: 100% 100%;
 }
 
-.assment__item-h2 {
+.assment__item-text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -922,7 +946,7 @@ body {
   font-weight: normal;
 }
 
-.assment__item-h2-last {
+.assment__item-text-last {
   max-width: 1140px;
 }
 
@@ -935,7 +959,7 @@ body {
   padding: 5.8% 0;
 }
 
-.assment__item-h2 span {
+.assment__item-text span {
   font-weight: bold;
   font-size: 24px;
   line-height: 29px;
@@ -986,7 +1010,7 @@ body {
   margin: 0 0 0 16px;
 }
 
-.products__filter-left-h {
+.products__filter-left-header {
   padding: 0 11px 0 0;
   font-weight: 600;
   font-size: 14px;
@@ -1093,7 +1117,7 @@ body {
   margin: 0 0 18px 0;
 }
 
-.products__items-h2 {
+.products__items-hidden {
   display: none;
 }
 
@@ -1159,7 +1183,7 @@ body {
           justify-content: space-between;
 }
 
-.products__items-info-h3 {
+.products__items-info-header {
   font-weight: normal;
   font-size: 13px;
   color: #000000;
@@ -1341,7 +1365,7 @@ body {
   text-align: center;
 }
 
-.services__item-h4 {
+.services__item-header {
   font-weight: normal;
   font-size: 19.96px;
   color: #FBFBFB;
@@ -1393,7 +1417,7 @@ body {
   margin-right: 85px;
 }
 
-.subscribe__text-h {
+.subscribe__text-header {
   font-weight: bold;
   font-size: 24px;
   line-height: 167.2%;
@@ -1420,11 +1444,11 @@ body {
   border: none;
   border-top-left-radius: 24px;
   border-bottom-left-radius: 24px;
-  padding: 0 0 0 22px;
+  padding: 0 22px 0 22px;
 }
 
 .subscribe__input:focus {
-  padding: 0 0 0 21px;
+  padding: 0 22px 0 21px;
 }
 
 .subscribe__submit,
@@ -1655,7 +1679,7 @@ body {
   .products__filter {
     width: 360px;
   }
-  .products__filter-left-h {
+  .products__filter-left-header {
     display: none;
   }
   .products__items {
