@@ -23,6 +23,13 @@ body {
     margin: 0 auto;
 }
 
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
 .header {
     background-color: #222222;
     padding: 19px 0;
@@ -61,14 +68,66 @@ body {
     
 }
 
-.quantity {
+.basket-block {
     position: absolute;
-    right: -2px;
-    top: -6px;
+    right: 0;
+    background: white;
+    font-size: 14px;
+    width: 420px;
+    border: 1px solid gray;
+    padding: 10px;
+    z-index: 10;
+    display: none;
+}
+
+.quantityTxt {
+    position: absolute;
+    right: -4px;
+    top: -8px;
     color: #fff;
     font-size: 12px;
     line-height: 14px;
-    z-index: 1;
+    z-index: 10;
+    background-color: $color-second;
+    display: flex;
+    border-radius: 50%;
+    min-width: 18px;
+    min-height: 18px;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+}
+
+.nameProduct,
+.quantityProduct,
+.priceProduct,
+.resultProduct,
+.summProduct {
+    display: inline-block;
+}
+
+.nameProduct {
+    width: 145px;
+}
+
+.quantityProduct,
+.priceProduct {
+    width: 90px;
+}
+
+.resultProduct {
+    width: 60px;
+}
+
+.summProduct {
+    width: 333px;
+}
+
+.first-line,
+.line-product {
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid gray
 }
 
 .header-products {
