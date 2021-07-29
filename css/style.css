@@ -74,6 +74,7 @@ body {
 .header__products-left {
     font-size: 24px;    
     color: #F16D7F;
+    font-weight: normal;
 }
 
 .bread-crumbs {
@@ -151,14 +152,14 @@ body {
     background: #FFFFFF;
 }
 
-.product__description-h3 {
+.product__description-h2 {
     font-weight: 300;
     font-size: 14px;
     color: #F16D7F;
     margin: 64px 0 0 0;
 }
 
-.product__description-h2 {
+.product__description-h3 {
     font-weight: 300;
     font-size: 18px;
     color: #4D4D4D;
@@ -236,17 +237,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-        width: 360px;
+    width: 360px;
     height: 260px;
     text-decoration: none;
 }
 
 .assment__item-h2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     font-size: 16px;
-    line-height: 19px;
     color: #FFFFFF;
     font-weight: normal;
+    background: rgba(33, 22, 22, 0.7);
+    width: inherit;
+    height: inherit;
+}
+
+.assment__item-h2-last {
+    max-width: 1140px;
 }
 
 .assment__item:not(:last-child) {
@@ -311,22 +321,50 @@ body {
     margin: 0 0 18px 0;
 }
 
-.products__items-product {
-    margin: 0 0 98px 0;
+.products__items-h2 {
+    display: none;
 }
 
-.products__items-link {
-    text-decoration: none;
-    margin-bottom: 30px;
+.products__items-product {
+    margin: 0 0 98px 0;
 }
 
 .products__items-card {
     width: 360px;
     background: #F8F8F8;
+    margin: 0 0 30px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.products__items-block {
+    position: relative;
+}
+
+.products__items-img-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(58, 56, 56, 0.86);
+    width: 360px;
+    height: 420px;
+    display: none;
+}
+
+.products__items-block:hover .products__items-img-hover {
+    display: block;
+}
+
+.products__items-link {
+    text-decoration: none;
 }
 
 .products__items-info {
     padding: 25px 18px 20px 18px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .products__items-info-h3 {
@@ -346,21 +384,80 @@ body {
     color: #F16D7F;
 }
 
+.products__all {
+    margin: 18px auto 95px;
+    display: flex;
+    justify-content: center;
+}
+
 .products__all-link {
-    display: block;
-    width: 211px;
-    height: 47px;
-    line-height: 47px;
     color: #F26376;
     border: 1px solid #FF6A6A;
     text-decoration: none;
-    margin: 18px auto 95px;
-    text-align: center;
-    position: relative;
+    padding: 14px 38px;
+}
+
+.products__all-link:hover {
+    background: #F16D7F;
+    color: #FFFFFF;
+}
+
+.product__card {
+    margin: 50px auto 65px;
+    display: inline-flex;
+    justify-content: center;
+    border: 1px solid #FF6A6A;
+}
+
+.product__card-add-product {
+    margin: 50px auto 65px;
+    display: inline-flex;
+    justify-content: center;
+    border: 1px solid #FF6A6A;
+}
+
+.product__card-add-product::before {
+    content: url(../img/add-to-cart.svg);
+    display: block;
+    padding: 14px 23px 0;
+}
+
+.product__card-addcart {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #fff;
+    text-decoration: none;
+}
+
+.product__card-addcart::before {
+    content: url(../img/add-to-cart-cart.svg);
+    display: block;
+    padding: 4px 12px 0;
+}
+
+.product__card-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 360px;
+    height: 420px;
+}
+
+.product__card-link-product {
+    text-decoration: none;
 }
 
 .product__description-link {
-    margin: 50px auto 65px;
+    font-size: 16px;
+    color: #F26376;
+    padding: 14px 56px 14px 0;
+}
+
+.product__card-cart {
+    font-size: 14px;
+    color: #FFFFFF;
+    padding: 13px 16px 13px 0;
 }
 
 .products__cart-img {
@@ -457,11 +554,17 @@ body {
 }
 
 .subscribe__input:focus {
-    outline: none;
+    padding: 0 0 0 21px;
 }
 
-.subscribe__input,
-.subscribe__input::-webkit-input-placeholder {
+.subscribe__submit,
+.subscribe__input:focus {
+    outline: none;
+    border: 1px solid #F16D7F;
+    border-right: none;
+}
+
+.subscribe__input::placeholder {
     font-size: 14px;
     color: #222224;
     opacity: 0.67;
@@ -476,6 +579,10 @@ body {
     color: #FFFFFF;
     border-top-right-radius: 24px;
     border-bottom-right-radius: 24px;
+}
+
+.subscribe__submit:hover {
+    cursor: pointer;
 }
 
 .footer__bottom {
@@ -496,6 +603,14 @@ body {
 
 .footer__bottom-social {
     display: flex;
+}
+
+.footer__bottom-social-link {
+    background: #fff;    
+}
+
+.footer__bottom-social-link:hover {
+    background: #F16D7F;    
 }
 
 .footer__bottom-social-link:not(:last-child) {
