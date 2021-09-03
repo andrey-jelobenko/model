@@ -2037,6 +2037,12 @@ body {
     font-size: 10px;
     line-height: 12px;
   }
+  .subscribe__input {
+    width: 245px;
+  }
+  .subscribe__submit {
+    width: 95px;
+  }
 }
 
 .header__nav {
