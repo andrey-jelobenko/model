@@ -303,7 +303,7 @@ body {
         height: 0;
         border: none;
         border-top: 1px solid #EAEAEA;
-        width: 640px;
+        max-width: 640px;
         margin: 65px auto;
     }
     
@@ -1281,6 +1281,9 @@ body {
     }
     .products__filter {
         width: 350px;
+    }
+    .product-description__line-large {
+        max-width: 175px;
     }
     .product-description__choose-li {
         font-size: 10px;
