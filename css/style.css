@@ -2024,6 +2024,9 @@ body {
     width: 350px;
     overflow: hidden;
   }
+  __items-img img {
+    width: 355px;
+  }
   .products__filter {
     width: 350px;
   }
