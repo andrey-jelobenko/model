@@ -598,6 +598,7 @@ body {
     
     &__items-img {
         display: flex;
+        overflow: hidden;
     }
     
     &__items-img-hover {
